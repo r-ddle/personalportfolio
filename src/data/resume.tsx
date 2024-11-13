@@ -36,7 +36,7 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/r-ddle",
+        url: "https://github.com/r-ddle",
         icon: Icons.github,
 
         navbar: true,

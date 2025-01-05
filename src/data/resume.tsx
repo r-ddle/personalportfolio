@@ -41,26 +41,26 @@ export const DATA = {
 
         navbar: true,
       },
-    //   LinkedIn: {
-    //     name: "LinkedIn",
-    //     url: "https://dub.sh/dillion-linkedin",
-    //     icon: Icons.linkedin,
+      //   LinkedIn: {
+      //     name: "LinkedIn",
+      //     url: "https://dub.sh/dillion-linkedin",
+      //     icon: Icons.linkedin,
 
-    //     navbar: true,
-    //   },
-    //   X: {
-    //     name: "X",
-    //     url: "https://dub.sh/dillion-twitter",
-    //     icon: Icons.x,
+      //     navbar: true,
+      //   },
+      //   X: {
+      //     name: "X",
+      //     url: "https://dub.sh/dillion-twitter",
+      //     icon: Icons.x,
 
-    //     navbar: true,
-    //   },
-    //   Youtube: {
-    //     name: "Youtube",
-    //     url: "https://dub.sh/dillion-youtube",
-    //     icon: Icons.youtube,
-    //     navbar: true,
-    //   },
+      //     navbar: true,
+      //   },
+      //   Youtube: {
+      //     name: "Youtube",
+      //     url: "https://dub.sh/dillion-youtube",
+      //     icon: Icons.youtube,
+      //     navbar: true,
+      //   },
       email: {
         name: "Send Email",
         url: "https://ahmedonline.dev@gmail.com",
@@ -71,29 +71,47 @@ export const DATA = {
     },
   },
 
-//   work: [
-//     {
-//       company: "",
-//       href: "",
-//       badges: [],
-//       location: "",
-//       title: "",
-//       logoUrl: "",
-//       start: "",
-//       end: "",
-//       description:
-//         "",
-//     },
-//   ],
+  //   work: [
+  //     {
+  //       company: "",
+  //       href: "",
+  //       badges: [],
+  //       location: "",
+  //       title: "",
+  //       logoUrl: "",
+  //       start: "",
+  //       end: "",
+  //       description:
+  //         "",
+  //     },
+  //   ],
   education: [
     {
       school: "ESOFT Metro Campus (In Progress)",
       href: "https://esoft.lk/",
+      degree: "Level 5 Pearson BTEC HND in Software Engineering",
+      note: "",
+      logoUrl: "/esoftlogo.png",
+      start: "Feb, 2024",
+      end: "Jan, 2027",
+    },
+    {
+      school: "ESOFT Metro Campus",
+      href: "https://esoft.lk/",
       degree: "Diploma in General IT",
-      note: "Straight Distinctions",
+      note: "",
       logoUrl: "/esoftlogo.png",
       start: "Feb, 2024",
       end: "Nov, 2024",
+    },
+    {
+      school: "Sat For G.C.E. (Ordinary Level- English Medium) Examination",
+      href: "",
+      degree: "G.C.E O/L",
+      note: "",
+      logoUrl: "/zahiralogo.png",
+      start: "Jan, 2012",
+      end: "Jan, 2023",
     },
   ],
   projects: [
@@ -122,39 +140,33 @@ export const DATA = {
         },
       ],
       image: "/pingpal.png",
-      video:
-        "",
+      video: "",
     },
     {
-        title: "Flyx Devs",
-        href: "https://github.com/r-ddle/flyxdevs-portfolio",
-        dates: "Limited Updates | Fixing Bugs",
-        active: true,
-        description:
-          "A company website made for Flyx Devs (owned by me) for consumers to contact and purchase beautiful websites made by me. Currently not working on, focusing on other projects but will be back soon.",
-        technologies: [
-          "React",
-          "Javascript",
-          "TailwindCSS",
-          "Preline UI",
-        ],
-        links: [
-          {
-            type: "Website",
-            href: "https://flyxdevs.live",
-            icon: <Icons.globe className="size-3" />,
-          },
-        ],
-        image: "/flyxdevs.png",
-        video:
-          "",
-      },
+      title: "Flyx Devs",
+      href: "https://github.com/r-ddle/flyxdevs-portfolio",
+      dates: "Limited Updates | Fixing Bugs",
+      active: true,
+      description:
+        "A company website made for Flyx Devs (owned by me) for consumers to contact and purchase beautiful websites made by me. Currently not working on, focusing on other projects but will be back soon.",
+      technologies: ["React", "Javascript", "TailwindCSS", "Preline UI"],
+      links: [
+        {
+          type: "Website",
+          href: "https://flyxdevs.live",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/flyxdevs.png",
+      video: "",
+    },
   ],
   hackathons: [
     {
       title: "Simple Calculator App",
       dates: "May 27, 2024",
-      description: "Calculator app made using Javascript after I made on in Python before.",
+      description:
+        "Calculator app made using Javascript after I made on in Python before.",
       links: [
         {
           title: "Source",
@@ -166,7 +178,8 @@ export const DATA = {
     {
       title: "Diaper Store LK Design Solution",
       dates: "May 29, 2024",
-      description: "A design solution for a diaper store in Sri Lanka to gain more customers.",
+      description:
+        "A design solution for a diaper store in Sri Lanka to gain more customers.",
       links: [
         {
           title: "Source",
@@ -202,7 +215,8 @@ export const DATA = {
     {
       title: "Masjid Management App",
       dates: "August 08, 2024",
-      description: "A fullstack software made for a masjid this is the web interface made using tailwind and js",
+      description:
+        "A fullstack software made for a masjid this is the web interface made using tailwind and js",
       links: [
         {
           title: "Source",
@@ -226,7 +240,8 @@ export const DATA = {
     {
       title: "ping-pal",
       dates: "November 06, 2024",
-      description: "A fullstack web application made for devs to monitor events on their application using discord messages so you can always be up to date anywhere you are. Fully customizable for any event from bug to user-signup and more.",
+      description:
+        "A fullstack web application made for devs to monitor events on their application using discord messages so you can always be up to date anywhere you are. Fully customizable for any event from bug to user-signup and more.",
       links: [
         {
           title: "Source",
@@ -238,7 +253,8 @@ export const DATA = {
     {
       title: "Personal Portfolio",
       dates: "October 15, 2024",
-      description: "A testing portfolio to improve my front-end skills with react and tailwind.",
+      description:
+        "A testing portfolio to improve my front-end skills with react and tailwind.",
       links: [
         {
           title: "Source",
@@ -250,7 +266,8 @@ export const DATA = {
     {
       title: "Portfolio Redesign",
       dates: "October 17, 2024",
-      description: "Redoing my portfolio to improve my front-end skills with react and tailwind.",
+      description:
+        "Redoing my portfolio to improve my front-end skills with react and tailwind.",
       links: [
         {
           title: "Source",
@@ -260,6 +277,5 @@ export const DATA = {
       ],
     },
     // Add the rest similarly...
-  ]
-
+  ],
 } as const;

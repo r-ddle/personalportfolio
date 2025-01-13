@@ -1,5 +1,6 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import { title } from "process";
 
 export const DATA = {
   name: "Ahmed",
@@ -160,6 +161,31 @@ export const DATA = {
       image: "/flyxdevs.png",
       video: "",
     },
+    {
+      title: "Masjid Management App",
+      href: "",
+      dates: "Completed",
+      active: false,
+      description:
+        "A desktop application made for masjids to manage members, payment details and more.",
+      technologies: [
+        "Electron",
+        "Javascript",
+        "TailwindCSS",
+        "MongoDB",
+        "HTML/CSS",
+        "Daisy UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "https://i.imgur.com/Nllltcn.jpeg",
+      video: "",
+    },
   ],
   hackathons: [
     {
@@ -276,6 +302,18 @@ export const DATA = {
         },
       ],
     },
-    // Add the rest similarly...
+    {
+      title: "Masjid Management App",
+      dates: "January 13, 2025",
+      description:
+        "A management app for masjids to manage members and payment details.",
+      links: [
+        {
+          title: "Source",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://github.com/r-ddle/masjid-management-software",
+        },
+      ],
+    },
   ],
 } as const;

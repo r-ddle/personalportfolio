@@ -183,7 +183,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "https://i.imgur.com/Nllltcn.jpeg",
+      image: "/masjidcrudappdemo.png",
       video: "",
     },
   ],

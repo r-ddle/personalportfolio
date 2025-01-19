@@ -186,6 +186,30 @@ export const DATA = {
       image: "/masjidcrudappdemo.png",
       video: "",
     },
+    {
+      title: "Sri Lanka Government Website Redesign",
+      href: "https://github.com/r-ddle/Sri-Lanka-Government-Website-Redesign",
+      dates: "Completed",
+      active: true,
+      description:
+        "A redesign of the Sri Lankan Government Website. A passion project to improve my front-end skills plus fix the old site with all the clutter.",
+      technologies: [
+        "React",
+        "NextJS",
+        "Typescript",
+        "TailwindCSS",
+        "Shadcn UI",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://govlk-redesign.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/govlkredesign.png",
+      video: "",
+    },
   ],
   hackathons: [
     {
@@ -312,6 +336,19 @@ export const DATA = {
           title: "Source",
           icon: <Icons.globe className="h-4 w-4" />,
           href: "https://github.com/r-ddle/masjid-management-software",
+        },
+      ],
+    },
+    {
+      title: "Redesigning Sri Lankan Government Site",
+      dates: "January 13, 2025",
+      description:
+        "A passion project to improve my front-end skills plus fix the old site with all the clutter.",
+      links: [
+        {
+          title: "Source",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://github.com/r-ddle/Sri-Lanka-Government-Website-Redesign",
         },
       ],
     },

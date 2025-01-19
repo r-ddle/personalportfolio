@@ -51,6 +51,7 @@ export const DATA = {
       },
       discord: {
         label: "r.ddle",
+        navbar: false,
       },
       email: {
         label: "ahmedonline.dev@gmail.com",

@@ -42,32 +42,23 @@ export const DATA = {
 
         navbar: true,
       },
-      //   LinkedIn: {
-      //     name: "LinkedIn",
-      //     url: "https://dub.sh/dillion-linkedin",
-      //     icon: Icons.linkedin,
+      linkedin: {
+        label: "Ahmed Abdullah",
+        url: "https://www.linkedin.com/in/r-ddle/",
+        icon: Icons.linkedin,
 
-      //     navbar: true,
-      //   },
-      //   X: {
-      //     name: "X",
-      //     url: "https://dub.sh/dillion-twitter",
-      //     icon: Icons.x,
-
-      //     navbar: true,
-      //   },
-      //   Youtube: {
-      //     name: "Youtube",
-      //     url: "https://dub.sh/dillion-youtube",
-      //     icon: Icons.youtube,
-      //     navbar: true,
-      //   },
+        navbar: true,
+      },
+      discord: {
+        label: "r.ddle",
+      },
       email: {
+        label: "ahmedonline.dev@gmail.com",
         name: "Send Email",
-        url: "https://ahmedonline.dev@gmail.com",
+        url: "mailto:ahmedonline.dev@gmail.com",
         icon: Icons.email,
 
-        navbar: false,
+        navbar: true,
       },
     },
   },

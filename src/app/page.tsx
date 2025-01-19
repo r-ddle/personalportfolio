@@ -159,7 +159,7 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Hackathons
+                  All Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   I like building things
@@ -203,15 +203,36 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to collaborate? Just shoot me an email{" "}
-                <Link
-                  href={DATA.contact.social.email.url}
-                  className="text-blue-500 hover:underline"
-                >
-                  with a direct question
-                </Link>{" "}
-                and I&apos;ll respond whenever I can.
+                Want to collaborate? Feel free to reach out to me through any of
+                the platforms below:
               </p>
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 17}>
+            <div className="flex flex-col items-center space-y-4">
+              {/* Email */}
+              <Link
+                href={DATA.contact.social.email.url}
+                className="text-blue-500 hover:underline"
+              >
+                {DATA.contact.social.email.label}
+              </Link>
+
+              {/* LinkedIn */}
+              <Link
+                href={DATA.contact.social.linkedin.url}
+                className="text-blue-500 hover:underline"
+              >
+                LinkedIn: {DATA.contact.social.linkedin.label}
+              </Link>
+
+              {/* Discord */}
+              <p className="text-muted-foreground">
+                Discord: {DATA.contact.social.discord.label}
+              </p>
+
+              {/* Phone */}
+              <p className="text-muted-foreground">Phone: {DATA.contact.tel}</p>
             </div>
           </BlurFade>
         </div>

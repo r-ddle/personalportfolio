@@ -203,7 +203,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://govlk-redesign.vercel.app",
+          href: "https://govlk-reimagined.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],

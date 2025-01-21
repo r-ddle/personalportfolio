@@ -40,10 +40,6 @@ export const DATA = {
 
         navbar: true,
       },
-      discord: {
-        label: "r.ddle",
-        navbar: false,
-      },
       email: {
         label: "ahmedonline.dev@gmail.com",
         name: "Send Email",

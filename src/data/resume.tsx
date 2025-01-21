@@ -12,24 +12,15 @@ export const DATA = {
     "I'm a Web Developer, who loves to build smooth and clean websites for better user experience.",
   summary:
     "My first language was Python. I started to learn it in 2022 for a few months then learned about a website called carrds which made me love designing beautiful sites for myself and other people, and thats basically how i became a web developer.",
-  avatarUrl: "",
-  skills: [
-    "HTML",
-    "CSS",
-    "Tailwind",
-    "React",
-    "MongoDB",
-    "ShadCN",
-    "Next.js",
-    "C#",
-    "SQL",
-    "Python",
-    "Netlify/Vercel",
-    "Github",
-  ],
+  avatarUrl: "/pfp.png",
+  skills: {
+    frontend: ["Next.js", "React", "ShadCN", "Tailwind", "CSS", "HTML"],
+    backend: ["Prisma", "Neon", "C#", "MongoDB", "Python", "SQL"],
+    tools: ["Netlify/Vercel", "Github", "Kinde Auth"],
+  },
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    // { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "ahmedonline.dev@gmail.com",
@@ -179,12 +170,12 @@ export const DATA = {
       video: "",
     },
     {
-      title: "Sri Lanka Government Website Redesign",
+      title: "GOV.LK Website Redesign",
       href: "https://github.com/r-ddle/Sri-Lanka-Government-Website-Redesign",
       dates: "Completed",
       active: true,
       description:
-        "A redesign of the Sri Lankan Government Website. A passion project to improve my front-end skills plus fix the old site with all the clutter.",
+        "A redesign of the Sri Lankan Government Website. Personal passion project to improve my front-end skills plus fix the old site with all the clutter.",
       technologies: [
         "React",
         "NextJS",
@@ -203,7 +194,7 @@ export const DATA = {
       video: "",
     },
   ],
-  hackathons: [
+  allprojects: [
     {
       title: "Simple Calculator App",
       dates: "May 27, 2024",

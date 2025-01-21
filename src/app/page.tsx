@@ -103,12 +103,62 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
-          <div className="flex flex-wrap gap-1">
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Frontend Column */}
+            <div className="flex flex-col gap-2">
+              <BlurFade delay={BLUR_FADE_DELAY * 10}>
+                <h3 className="text-sm text-muted-foreground">Frontend</h3>
               </BlurFade>
-            ))}
+              <div className="flex flex-wrap gap-1">
+                {DATA.skills.frontend.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 10 + id * 0.05}
+                  >
+                    <Badge>{skill}</Badge>
+                  </BlurFade>
+                ))}
+              </div>
+            </div>
+
+            {/* Backend Column */}
+            <div className="flex flex-col gap-2">
+              <BlurFade delay={BLUR_FADE_DELAY * 11}>
+                <h3 className="text-sm text-muted-foreground">
+                  Backend & Databases
+                </h3>
+              </BlurFade>
+              <div className="flex flex-wrap gap-1">
+                {DATA.skills.backend.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 11 + id * 0.05}
+                  >
+                    <Badge>{skill}</Badge>
+                  </BlurFade>
+                ))}
+              </div>
+            </div>
+
+            {/* Tools Column */}
+            <div className="flex flex-col gap-2">
+              <BlurFade delay={BLUR_FADE_DELAY * 12}>
+                <h3 className="text-sm text-muted-foreground">
+                  Tools & Deployment
+                </h3>
+              </BlurFade>
+              <div className="flex flex-wrap gap-1">
+                {DATA.skills.tools.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                  >
+                    <Badge>{skill}</Badge>
+                  </BlurFade>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -153,27 +203,27 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="hackathons">
+      <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  All Projects
+                  Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   During my time in studying, I worked on{" "}
-                  {DATA.hackathons.length}+ projects. Here are a few of them.
+                  {DATA.allprojects.length}+ projects. Here are a few of them.
                 </p>
               </div>
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.hackathons.map((project, id) => (
+              {DATA.allprojects.map((project, id) => (
                 <BlurFade
                   key={project.title + project.dates}
                   delay={BLUR_FADE_DELAY * 15 + id * 0.05}
@@ -225,11 +275,6 @@ export default function Page() {
               >
                 LinkedIn: {DATA.contact.social.linkedin.label}
               </Link>
-
-              {/* Discord */}
-              <p className="text-muted-foreground">
-                Discord: {DATA.contact.social.discord.label}
-              </p>
 
               {/* Phone */}
               <p className="text-muted-foreground">Phone: {DATA.contact.tel}</p>

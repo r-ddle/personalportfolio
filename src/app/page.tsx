@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { GitHubProjects } from "@/components/github-projects";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -49,7 +50,7 @@ export default function Page() {
           </Markdown>
         </BlurFade>
       </section>
-      {/* <section id="work">
+      <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <h2 className="text-xl font-bold">Work Experience</h2>
@@ -69,11 +70,12 @@ export default function Page() {
                 badges={work.badges}
                 period={`${work.start} - ${work.end ?? "Present"}`}
                 description={work.description}
+                expandedByDefault={true}
               />
             </BlurFade>
           ))}
         </div>
-      </section> */}
+      </section>
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
@@ -101,14 +103,14 @@ export default function Page() {
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Skills</h2>
+            <h2 className="text-xl font-bold">Skills & Abilities</h2>
           </BlurFade>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Frontend Column */}
             <div className="flex flex-col gap-2">
               <BlurFade delay={BLUR_FADE_DELAY * 10}>
-                <h3 className="text-sm text-muted-foreground">Frontend</h3>
+                <h3 className="text-sm font-semibold text-muted-foreground">Front-End Development</h3>
               </BlurFade>
               <div className="flex flex-wrap gap-1">
                 {DATA.skills.frontend.map((skill, id) => (
@@ -125,8 +127,8 @@ export default function Page() {
             {/* Backend Column */}
             <div className="flex flex-col gap-2">
               <BlurFade delay={BLUR_FADE_DELAY * 11}>
-                <h3 className="text-sm text-muted-foreground">
-                  Backend & Databases
+                <h3 className="text-sm font-semibold text-muted-foreground">
+                  Back-End Development
                 </h3>
               </BlurFade>
               <div className="flex flex-wrap gap-1">
@@ -144,8 +146,8 @@ export default function Page() {
             {/* Tools Column */}
             <div className="flex flex-col gap-2">
               <BlurFade delay={BLUR_FADE_DELAY * 12}>
-                <h3 className="text-sm text-muted-foreground">
-                  Tools & Deployment
+                <h3 className="text-sm font-semibold text-muted-foreground">
+                  Tools & Software
                 </h3>
               </BlurFade>
               <div className="flex flex-wrap gap-1">
@@ -153,6 +155,44 @@ export default function Page() {
                   <BlurFade
                     key={skill}
                     delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                  >
+                    <Badge>{skill}</Badge>
+                  </BlurFade>
+                ))}
+              </div>
+            </div>
+
+            {/* Soft Skills Column */}
+            <div className="flex flex-col gap-2">
+              <BlurFade delay={BLUR_FADE_DELAY * 12.5}>
+                <h3 className="text-sm font-semibold text-muted-foreground">
+                  Soft Skills
+                </h3>
+              </BlurFade>
+              <div className="flex flex-wrap gap-1">
+                {DATA.skills.softskills.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 12.5 + id * 0.05}
+                  >
+                    <Badge>{skill}</Badge>
+                  </BlurFade>
+                ))}
+              </div>
+            </div>
+
+            {/* Languages Column */}
+            <div className="flex flex-col gap-2">
+              <BlurFade delay={BLUR_FADE_DELAY * 13}>
+                <h3 className="text-sm font-semibold text-muted-foreground">
+                  Languages
+                </h3>
+              </BlurFade>
+              <div className="flex flex-wrap gap-1">
+                {DATA.skills.languages.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 13 + id * 0.05}
                   >
                     <Badge>{skill}</Badge>
                   </BlurFade>
@@ -203,44 +243,8 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="projects">
-        <div className="space-y-12 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 13}>
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Projects
-                </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I like building things
-                </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in studying, I worked on{" "}
-                  {DATA.allprojects.length}+ projects. Here are a few of them.
-                </p>
-              </div>
-            </div>
-          </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.allprojects.map((project, id) => (
-                <BlurFade
-                  key={project.title + project.dates}
-                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
-                >
-                  <HackathonCard
-                    title={project.title}
-                    description={project.description}
-                    // location={project.location}
-                    dates={project.dates}
-                    // image={project.image}
-                    links={project.links}
-                  />
-                </BlurFade>
-              ))}
-            </ul>
-          </BlurFade>
-        </div>
+      <section id="all-projects">
+        <GitHubProjects />
       </section>
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">

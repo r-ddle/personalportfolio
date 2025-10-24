@@ -19,6 +19,7 @@ interface ResumeCardProps {
   period: string;
   description?: string;
   note?: string;
+  expandedByDefault?: boolean;
 }
 export const ResumeCard = ({
   logoUrl,
@@ -30,8 +31,9 @@ export const ResumeCard = ({
   period,
   description,
   note,
+  expandedByDefault = false,
 }: ResumeCardProps) => {
-  const [isExpanded, setIsExpanded] = React.useState(false);
+  const [isExpanded, setIsExpanded] = React.useState(expandedByDefault);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     if (description) {

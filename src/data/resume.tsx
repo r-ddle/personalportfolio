@@ -5,7 +5,7 @@ import { title } from "process";
 export const DATA = {
   name: "Ahmed Abdullah",
   initials: "A.A",
-  url: "https://r-ddle.me/",
+  url: "https://r-ddle.dev/",
   location: "Colombo 09, Maradana, Sri Lanka",
   locationLink: "https://www.google.com/maps/place/colombo",
   description:
@@ -22,7 +22,7 @@ export const DATA = {
   },
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "https://blog.r-ddle.dev", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
     email: "ahmedonline.dev@gmail.com",

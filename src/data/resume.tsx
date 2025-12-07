@@ -59,7 +59,7 @@ export const DATA = {
       href: "https://ralhum.com/",
       badges: [],
       location: "Remote",
-      title: "Trainee Digital Executive",
+      title: "Trainee Digital Media Executive",
       logoUrl: "/ralhumlogo.svg",
       start: "June 2025",
       end: "Present",

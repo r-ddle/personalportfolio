@@ -59,12 +59,36 @@ export const DATA = {
       href: "https://ralhum.com/",
       badges: [],
       location: "Remote",
+      title: "IT & Communications Executive",
+      logoUrl: "/ralhumlogo.svg",
+      start: "February 2026",
+      end: "Present",
+      description:
+        "Manage Ralhum's technology infrastructure, digital operations, and corporate communications. Oversee e-commerce across Daraz, Kapruka, Shopify, and B2B channels, ERP operations in Tally Prime, IT and security support, website SEO and maintenance, and brand communications. Support internal automation initiatives and cross-functional IT needs across operations and sales.",
+    },
+    {
+      company: "Ralhum Sports",
+      href: "https://ralhum.com/",
+      badges: [],
+      location: "On-site",
       title: "Trainee Digital Media Executive",
       logoUrl: "/ralhumlogo.svg",
       start: "June 2025",
-      end: "Present",
+      end: "February 2026",
       description:
-        "Contributed to digital marketing and website building. Developed websites and e-commerce platforms using Next.js, TypeScript, as well as Shopify and WordPress prototypes. Transformed an outdated static site into a modern, scalable e-commerce web app with full shop cart, product verification, order processing, and order tracking capabilities.",
+        "Supported digital marketing through social media management, online store oversight, and market research. Helped enhance the brand's online presence and contributed to digital business operations. Independently developed and launched the company's e-commerce website, expanding its digital sales platform beyond my core responsibilities.",
+    },
+    {
+      company: "Ralhum Sports",
+      href: "https://ralhum.com/",
+      badges: [],
+      location: "Western Province, Sri Lanka",
+      title: "Freelance Web Developer",
+      logoUrl: "/ralhumlogo.svg",
+      start: "June 2025",
+      end: "August 2025",
+      description:
+        "Led development of a custom e-commerce platform for internal operations using React, Next.js, PayloadCMS, Neon PostgreSQL, Tailwind CSS, ShadCN, and TypeScript. Built accessible product, order, and sales management interfaces with authentication, real-time updates, robust error handling, and modular frontend components. Collaborated with cross-functional teams to improve features, optimize performance, and meet business needs.",
     },
   ],
   education: [
